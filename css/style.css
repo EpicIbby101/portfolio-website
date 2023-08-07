@@ -107,11 +107,10 @@ hr {
 }
 
 .about-heading,
-.project-heading,
-.artwork-heading {
+.project-heading {
   text-align: center;
-  border-bottom: 2px solid black;
-  width: 300px;
+  border-bottom: 2px solid #ccc;
+  width: 400px;
   margin: 25px auto;
 }
 
@@ -123,6 +122,10 @@ hr {
   grid-template-areas: 
   "project-1 project-2 project-3"
   "project-1 project-4 project-5";
+}
+
+#projects a {
+  text-decoration: none;
 }
 
 .projectGridArea {
@@ -150,27 +153,66 @@ hr {
 
 #project-1 {
   grid-area: project-1;
-  background-image: url("../images/02-portfolio-1.jpg");
+  background-image: url("../images/earth.jpg");
 }
 
 #project-2 {
   grid-area: project-2;
-  background-image: url("../images/02-portfolio-2.jpg");
+  background-image: url("../images/fitness.jpg");
 }
 
 #project-3 {
   grid-area: project-3;
-  background-image: url("../images/02-portfolio-3.jpg");
+  background-image: url("../images/social-media.jpg");
 }
 
 #project-4 {
   grid-area: project-4;
-  background-image: url("../images/02-portfolio-3.jpg");
+  background-image: url("../images/recipe.jpg");
 }
 
 #project-5 {
   grid-area: project-5;
-  background-image: url("../images/02-portfolio-3.jpg");
+  background-image: url("../images/weather.png");
+}
+
+.contact-section {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 20px;
+  box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.3);
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+.contact-form button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #555;
 }
 
 h1,
@@ -179,14 +221,21 @@ h3,
 h4,
 h5,
 h6 {
-  font-size: 2rem;
   max-width: 800px;
   margin: 10px auto;
   padding: auto;
   display: block;
-  flex-direction: column;
   align-items: center;
   text-align: center;
+}
+
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
 }
 
 p {
@@ -221,4 +270,36 @@ footer {
   color: #fff;
   text-align: center;
   padding: 1rem;
+}
+
+@media only screen and (max-width: 1000px) {
+  #navigation {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+  }
+  .hero-banner {
+    background-size: cover;
+  }
+  #about {
+    max-width: 400px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #headline {
+    position: static;
+    margin: 20px;
+  }
+  #projects {
+    grid-template-rows: 300px 300px 300px 300px 300px;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "project-1"
+      "project-2"
+      "project-3"
+      "project-4"
+      "project-5"
+    ;
+  }
 }
