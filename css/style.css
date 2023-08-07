@@ -37,7 +37,7 @@ body {
 }
 
 .navbar a:hover {
-  background-color: #555;
+  background-color: #cc0f5b;
 }
 
 .hero-banner {
@@ -54,7 +54,6 @@ body {
 }
 
 .hero-text {
-  /* font-size: 2rem; */
   margin-bottom: 0;
 }
 
@@ -69,7 +68,7 @@ body {
 }
 
 .profile-pic img {
-  width: 15%;
+  width: 250px;
   border-radius: 50%;
   border-color: #f7f7f7;
   border-style: solid;
@@ -89,12 +88,8 @@ body {
   text-align: center;
 }
 
+.tools a,
 .technologies a {
-  text-decoration: none;
-  margin-right: 5px;
-}
-
-.tools a {
   text-decoration: none;
   margin-right: 5px;
 }
@@ -235,7 +230,11 @@ h2 {
 }
 
 h3 {
-  font-size: 1.5rem;
+  font-size: 1.65rem;
+}
+
+h4 {
+  font-size: 1.3rem;
 }
 
 p {
@@ -248,22 +247,6 @@ p {
   padding: 1rem;
 }
 
-.project {
-  border: 1px solid #ccc;
-  padding: 1rem;
-  margin-bottom: 1rem;
-  /* background-color: #fff; */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.project h3 {
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
-}
-
-.project p {
-  margin-bottom: 0.5rem;
-}
 
 footer {
   background-color: #333;
@@ -287,10 +270,6 @@ footer {
 }
 
 @media only screen and (max-width: 600px) {
-  #headline {
-    position: static;
-    margin: 20px;
-  }
   #projects {
     grid-template-rows: 300px 300px 300px 300px 300px;
     grid-template-columns: 1fr;
