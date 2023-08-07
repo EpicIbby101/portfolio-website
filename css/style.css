@@ -1,0 +1,153 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #232323;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  position: sticky;
+  background: linear-gradient(90deg, rgba(40,60,64,1) 27%, rgba(38,63,83,1) 62%, rgba(135,9,98,1) 87%);
+  color: #fff;
+  text-align: start;
+  padding: 10px 0;
+
+}
+
+.navbar {
+  justify-content: center;
+  margin-left: 10px;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  margin: 0 5px;
+  border-radius: 5px;
+}
+
+.navbar a:hover {
+  background-color: #555;
+}
+
+.hero-banner {
+  position: relative;
+  height: 400px;
+  background-image: url('../images/2587.png');
+  background-size: contain;
+  background-position: center;
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+.hero-text {
+  /* font-size: 2rem; */
+  margin-bottom: 0;
+}
+
+.hero-text h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 3rem;
+  
+}
+.hero-text p {
+  margin-top: 15px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.profile-pic img {
+  width: 15%;
+  border-radius: 50%;
+  border-color: #f7f7f7;
+  border-style: solid;
+}
+
+.page-wrapper {
+  color: white;
+}
+
+#about,
+#projects {
+  max-width: 800px;
+  margin: 10px auto;
+  padding: auto;
+  display: block;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.technologies a {
+  text-decoration: none;
+  margin-right: 5px;
+}
+
+.tools a {
+  text-decoration: none;
+  margin-right: 5px;
+}
+
+hr {
+  height: 2px;
+  background-color: #ccc;
+  border: none;
+  margin: 30px 0;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 2rem;
+}
+
+p {
+  margin: 0;
+}
+
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+
+.project {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  /* background-color: #fff; */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.project h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.project p {
+  margin-bottom: 0.5rem;
+}
+
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
