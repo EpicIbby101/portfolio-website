@@ -9,3 +9,6 @@ This portfolio is mostly minimalistic and responsive and is currently a work in 
 
 Please find my portfolio here:
 https://epicibby101.github.io/portfolio-website/
+
+![Screenshot 2023-08-08 011226](https://github.com/EpicIbby101/portfolio-website/assets/86202881/e0d2370e-7d09-4367-a63f-b4d760ae6ad0)
+
